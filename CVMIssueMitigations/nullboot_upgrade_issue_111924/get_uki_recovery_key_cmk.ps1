@@ -36,7 +36,7 @@ if ($host.Version.Major -eq 5) {
 if ($resource.Authority.EndsWith("vault.azure.net")) {
     $azureAccessToken = Get-AzAccessToken -ResourceUrl "https://vault.azure.net"
 } else {
-    $azureAccessToken = Get-AzAccessT`oken -ResourceUrl "https://managedhsm.azure.net"
+    $azureAccessToken = Get-AzAccessToken -ResourceUrl "https://managedhsm.azure.net"
 }
 
 # New AzCLI SDK versions has Token of type System.Security.SecureString
